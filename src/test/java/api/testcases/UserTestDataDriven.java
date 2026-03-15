@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 
 import com.github.javafaker.Faker;
 
-import api.endPoints.UserEndPoints;
+import api.endPoints.UserEndPoints_old;
 import api.payload.UserPayload;
 import api.utilities.DataProviders;
 import io.restassured.response.Response;
@@ -34,7 +34,7 @@ public class UserTestDataDriven {
         userPayloadObj.setPassword(password);
         userPayloadObj.setPhone(phone);   
     	
-    	Response response = UserEndPoints.createUser(userPayloadObj);
+    	Response response = UserEndPoints_old.createUser(userPayloadObj);
        response.then().log().all();
        Assert.assertEquals(response.getStatusCode(), 200);
     }
@@ -42,7 +42,7 @@ public class UserTestDataDriven {
   @Test(priority =2, dataProvider = "UsernameDataPvdr", dataProviderClass = DataProviders.class)
     public void testGetUser(String userName) {
     	  userPayloadObj.setUsername(userName);
-       Response response = UserEndPoints.GetUser(userPayloadObj.getUsername());
+       Response response = UserEndPoints_old.GetUser(userPayloadObj.getUsername());
        response.then().log().all();
        Assert.assertEquals(response.getStatusCode(), 200);
        
@@ -53,7 +53,7 @@ public class UserTestDataDriven {
     	
     	  userPayloadObj.setFirstName("Kowslaya");
     	  userPayloadObj.setUsername(userName);
-       Response response = UserEndPoints.UpdateUser(userPayloadObj.getUsername(), userPayloadObj);
+       Response response = UserEndPoints_old.UpdateUser(userPayloadObj.getUsername(), userPayloadObj);
        
        //log response
        response.then().log().all();
@@ -63,7 +63,7 @@ public class UserTestDataDriven {
        
        //Read User data to check first name is updated or not
        System.out.println("Updated User Data");
-       Response response1 = UserEndPoints.GetUser(userPayloadObj.getUsername());
+       Response response1 = UserEndPoints_old.GetUser(userPayloadObj.getUsername());
        response1.then().log().all();
        
     }
@@ -71,7 +71,7 @@ public class UserTestDataDriven {
     @Test(priority =4, dataProvider = "UsernameDataPvdr",dataProviderClass = DataProviders.class)
     public void testDeleteUser(String userName) {
     	 userPayloadObj.setUsername(userName);
-       Response response = UserEndPoints.DeleteUser(userPayloadObj.getUsername());
+       Response response = UserEndPoints_old.DeleteUser(userPayloadObj.getUsername());
        response.then().log().all();
        System.out.println("Delete Status code "+response.getStatusCode() +" Delete Status message "+response.getStatusLine());
        Assert.assertEquals(response.getStatusCode(), 200);

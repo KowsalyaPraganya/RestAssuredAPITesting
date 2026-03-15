@@ -20,7 +20,7 @@ public class DataProviders {
 				userData[rowNum - 1][colNum] = readExcelFile.ReadExcelData(rowNum, colNum);
 			}
 		}
-		System.out.println("UserData : "+userData.toString());
+		
 		return userData;
 	}
 

@@ -17,8 +17,6 @@ public class ReadExcelFile {
    public static XSSFSheet excelsheet; 
    public static XSSFRow row;
    public static XSSFCell cell;
-
- 
    
    public ReadExcelFile()  {
 	   try {
