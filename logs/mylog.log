@@ -30,3 +30,11 @@
 [INFO ] 2026-03-15 15:22:38.089 [main] RestAssuredAPITesting - Update User Executed
 [INFO ] 2026-03-15 15:22:39.431 [main] RestAssuredAPITesting - Delete User Executed
 [INFO ] 2026-03-15 15:22:39.431 [main] RestAssuredAPITesting - Delete User Executed
+[INFO ] 2026-03-15 18:48:00.359 [main] RestAssuredAPITesting - Create User Executed
+[INFO ] 2026-03-15 18:48:00.359 [main] RestAssuredAPITesting - Create User Executed
+[INFO ] 2026-03-15 18:48:06.358 [main] RestAssuredAPITesting - Get User Executed
+[INFO ] 2026-03-15 18:48:06.358 [main] RestAssuredAPITesting - Get User Executed
+[INFO ] 2026-03-15 18:48:15.156 [main] RestAssuredAPITesting - Update User Executed
+[INFO ] 2026-03-15 18:48:15.156 [main] RestAssuredAPITesting - Update User Executed
+[INFO ] 2026-03-15 18:48:21.920 [main] RestAssuredAPITesting - Delete User Executed
+[INFO ] 2026-03-15 18:48:21.920 [main] RestAssuredAPITesting - Delete User Executed
