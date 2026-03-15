@@ -83,6 +83,13 @@
         <groupId>com.aventstack</groupId>
         <artifactId>extentreports</artifactId>
         <version>5.0.9</version> <!-- Check latest version in Maven Central -->
+         <exclusions>
+        <exclusion>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </exclusion>
+    </exclusions>
+
     </dependency>
     
     <dependency>

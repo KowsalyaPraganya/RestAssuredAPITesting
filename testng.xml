@@ -4,8 +4,8 @@
 <listeners><listener class-name="api.utilities.ExtentListenerClass"></listener></listeners>
   <test thread-count="5" name="Test">
     <classes>
-      <!--<class name="api.testcases.UserTestDataDriven"/> -->
-      <class name="api.testcases.UserTest"/>
+      <class name="api.testcases.UserTestDataDriven"/>
+      <!--<class name="api.testcases.UserTest"/> -->
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

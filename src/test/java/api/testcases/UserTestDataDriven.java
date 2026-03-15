@@ -4,8 +4,6 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.github.javafaker.Faker;
-
 import api.endPoints.UserEndPoints_old;
 import api.payload.UserPayload;
 import api.utilities.DataProviders;

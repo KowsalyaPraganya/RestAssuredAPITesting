@@ -1,0 +1,15 @@
+Practice\ValidateResponse.class
+Practice\queryParam.class
+Practice\putRequest.class
+Practice\deleteRequest.class
+Practice\postRequest.class
+Practice\patchRequest.class
+Practice\getRequest.class
+Practice\responseTime.class
+Practice\BasicAuthentication.class
+Practice\ExtractDataFromJsonResponse.class
+Practice\AddHeader.class
+Practice\pagination.class
+Practice\ValidateHeader.class
+Practice\jsonArraySize.class
+Practice\pathParam.class
